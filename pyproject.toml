@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "phoenix-evaluation"
+version = "0.1.0"
+description = ""
+authors = ["anand-kamble <amk23j@fsu.edu>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+llama-index = "^0.10.42"
+arize-phoenix = {extras = ["evals"], version = "^4.2.4"}
+llama-index-llms-ollama = "^0.1.5"
+llama-index-embeddings-ollama = "^0.1.2"
+llama-index-callbacks-arize-phoenix = "^0.1.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
